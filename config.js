@@ -9,7 +9,7 @@ module.exports = {
 
     sudo: process.env.SUDO ? process.env.SUDO.split(",") : ["2348165846414"," 2349014805359"], // People Who can use the bot even in Private mode
 
-    mode: process.env.MODE || "public", // Bot mode: 'public' or 'private'
+    mode: process.env.MODE || "private", // Bot mode: 'public' or 'private'
 
     region: process.env.REGION || "Nigeria", // Region
 
@@ -25,9 +25,9 @@ module.exports = {
 
     autoRead: process.env.AUTO_READ === "true", // Auto-read messages (true or false)
 
-    autoViewStatus: process.env.AUTO_VIEW_STATUS === "true", // Auto-view statuses (true or false)
+    autoViewStatus: process.env.AUTO_VIEW_STATUS === "false", // Auto-view statuses (true or false)
 
-    autoReact: process.env.AUTO_REACT === "true", // Auto-react (true or false)
+    autoReact: process.env.AUTO_REACT === "false", // Auto-react (true or false)
 
     sessionId: process.env.SESSION_ID || "", // Add Your Session ID here
 
